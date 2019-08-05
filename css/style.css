@@ -1,0 +1,268 @@
+/* global junk */
+header {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url("http://placekitten.com/1024/576");
+  background-size: cover;
+  height: 500px;
+  padding-top: 10%;
+}
+
+body {
+  padding-top: 4.5%;
+  background: rgb(253, 63, 179);
+  background: linear-gradient(90deg, rgba(253, 63, 179, 1) 0%, rgba(253, 63, 129, 1) 43%, rgba(253, 62, 79, 1) 100%);
+}
+
+footer {
+  background-color: white;
+  width: 96%;
+  padding: 2%;
+  padding-bottom: 100px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 1.025em;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: .95em;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#FD3FB3, #FD3E4F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.column img {
+  object-fit: contain;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 1%;
+}
+
+.container {
+  display: flex;
+}
+
+.boxcontainer {
+  background-color: white;
+  width: auto;
+}
+
+/* nav stuff */
+
+#nav-logo {
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+a.nav-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+
+.nav-links {
+  text-align: center;
+}
+
+.nav-social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top-menu {}
+
+/* buttons */
+
+.disc-butt {
+  color: white;
+  font-weight: 600;
+  background: rgb(253, 63, 179);
+  background: linear-gradient(90deg, rgba(253, 63, 179, 1) 0%, rgba(253, 63, 129, 1) 43%, rgba(253, 62, 79, 1) 100%);
+  width: 150px;
+  height: 50px;
+  border-style: none;
+}
+
+.disc-butt:focus, .disc-butt:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+#port-butt {
+  border-radius: 15px;
+  color: white;
+  background: none;
+  border-color: white;
+  border-width: 2px;
+  width: 150px;
+  height: 40px;
+  outline: none;
+}
+
+/* services section */
+
+#services {
+  width: auto;
+  background-color: white;
+  width: auto;
+}
+#services.content {
+  padding-top: 0%;
+}
+
+.service {
+  width: 50%;
+  padding: 7%;
+  font-size: .85em;
+  font-family: 'Playfair Display', serif;
+}
+
+.service:hover {
+  background: rgb(253, 63, 179);
+  background: linear-gradient(90deg, rgba(253, 63, 179, 1) 0%, rgba(253, 63, 129, 1) 43%, rgba(253, 62, 79, 1) 100%);
+}
+
+.background-text {
+  position: absolute;
+  color: rgba(253, 62, 79, .25);
+  font-size: 4em;
+  font-weight: bolder;
+  z-index: 2;
+}
+
+.foreground-text {
+  z-index: 3;
+}
+
+/* team section */
+
+.team-info {
+  text-align: center;
+}
+
+.team-img {
+  background: url(http://placekitten.com/200/300) no-repeat;
+  background-size: 200px 300px;
+  background-position: center;
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 30px;
+}
+
+.team-img:hover .overlay-effect {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-effect {
+  width: 201px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 20%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgb(253, 63, 179, 0.7);
+  background: linear-gradient(90deg, rgba(253, 63, 179, 0.7) 0%, rgba(253, 63, 129, 0.7) 43%, rgba(253, 62, 79, 0.7) 100%);
+  overflow:hidden;
+}
+
+#team {
+  background-color: white;
+  width: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#team p {
+  font-family: 'Playfair Display', serif;
+}
+
+/* about section */
+
+#about {
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  line-height: 1.75em;
+  padding: 5%;
+  margin-bottom: 0%;
+  color: white;
+  height: 450px;
+  background: rgb(253, 63, 179);
+  background: linear-gradient(90deg, rgba(253, 63, 179, 1) 0%, rgba(253, 63, 129, 1) 43%, rgba(253, 62, 79, 1) 100%);
+}
+
+#box1 {
+  background-color: white;
+  width: auto;
+}
+
+#box2 {
+  background-color: #f4f4f4;
+  width: auto;
+}
+
+/* features section */
+
+#features {
+  color: white;
+  background-color: #222222;
+  width: auto;
+  font-size: .75em;
+  padding-top: 2%;
+}
